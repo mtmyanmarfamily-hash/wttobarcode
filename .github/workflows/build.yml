@@ -26,9 +26,8 @@ jobs:
 
       - name: Unzip project
         run: |
-          unzip -q WheelTaxBarcode.zip
-          ls WheelTaxBarcode
-
+          unzip -q WheelTaxBarcode_fixed.zip
+          ls WheelTaxFixed
       - name: Build APK
         working-directory: WheelTaxBarcode
         run: gradle assembleDebug
